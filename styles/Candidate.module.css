@@ -1,0 +1,162 @@
+.container {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 24px;
+  line-height: 1.15;
+  font-size: 35px;
+}
+
+.card {
+  margin-bottom: 12px;
+  padding: 18px;
+  text-align: left;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cardBody {
+  display: flex;
+}
+
+.cardTextContainer {
+  padding-left: 12px;
+}
+
+@media (max-width: 600px) {
+  .cardTextContainer {
+      font-size: 12px;
+    }
+}
+
+.cardInput {
+  margin: 12px 0;
+  width: 100%;
+  resize: none;
+}
+
+.cardCommentArea {
+  margin-top: 12px;
+}
+
+.cardButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* https: //getcssscan.com/css-buttons-examples */
+.rejectButton {
+  margin-left: 8px;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  min-height: 24px;
+  min-width: 60px;
+  outline: 0;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.rejectButton:hover,
+.rejectButton:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.rejectButton:active {
+  opacity: .5;
+}
+
+.acceptButton {
+  margin-left: 8px;
+  background: #51d242;
+  border: 1px solid #51d242;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  min-height: 24px;
+  min-width: 60px;
+  outline: 0;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.acceptButton:hover,
+.acceptButton:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #51d242;
+}
+
+.acceptButton:active {
+  opacity: .5;
+}
+
+.undoButton {
+  margin-left: 8px;
+  background: #4279d2;
+  border: 1px solid #4279d2;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  min-height: 24px;
+  min-width: 60px;
+  outline: 0;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.undoButton:hover,
+.undoButton:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #4279d2;
+}
+
+.undoButton:active {
+  opacity: .5;
+}
