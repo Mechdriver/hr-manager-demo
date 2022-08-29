@@ -1,10 +1,10 @@
-import { Candidate, CandidateName } from "./CandidateType"
+import { Candidate, CandidateName, CandidateStatus } from "./CandidateType"
 
 export const parseCandidate = (data: any): Candidate => {
   let gender = 'O';
   if (data.gender === 'male') {
     gender = 'M';
-  } else if (data.gender === 'femail') {
+  } else if (data.gender === 'female') {
     gender = 'F';
   }
 
@@ -15,8 +15,8 @@ export const parseCandidate = (data: any): Candidate => {
     email: data.email,
     phoneNumber: data.phone,
     avatar: data.picture.large,
-    status: null,
-    comment: null,
+    status: CandidateStatus.NONE,
+    comment: '',
   };
 
   return candidate;

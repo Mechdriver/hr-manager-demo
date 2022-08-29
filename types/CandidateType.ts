@@ -5,8 +5,8 @@ export type Candidate = {
   email: string;
   phoneNumber: string,
   avatar: string;
-  status: CandidateStatus | null,
-  comment: string | null,
+  status: CandidateStatus,
+  comment: string,
 };
 
 export type CandidateName = {
@@ -16,6 +16,7 @@ export type CandidateName = {
 };
 
 export enum CandidateStatus {
-  REJECTED = 0,
-  ACCEPTED = 1,
+  NONE = 0,
+  REJECTED = 1,
+  ACCEPTED = 2,
 }

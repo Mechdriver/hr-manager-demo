@@ -29,7 +29,7 @@
   padding-left: 12px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .cardTextContainer {
       font-size: 12px;
     }
@@ -55,18 +55,23 @@
 
 .cardCommentArea {
   margin-top: 12px;
+  padding: 8px;
+  max-width: 350px;
+  max-height: 100px;
+  overflow: scroll;
+  border: 1px solid gray;
+  border-radius: 8px;
 }
 
 .cardButtonContainer {
+  margin-top: 12px;
   display: flex;
   justify-content: flex-end;
 }
 
 /* https: //getcssscan.com/css-buttons-examples */
-.rejectButton {
+.cardButton {
   margin-left: 8px;
-  background: #FF4742;
-  border: 1px solid #FF4742;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
@@ -89,87 +94,42 @@
   vertical-align: middle;
 }
 
-.rejectButton:hover,
-.rejectButton:active {
+.cardButton.reject {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+}
+
+.cardButton.accept {
+  background: #51d242;
+  border: 1px solid #51d242;
+}
+
+.cardButton.undo {
+  background: #4279d2;
+  border: 1px solid #4279d2;
+}
+
+.cardButton:hover,
+.cardButton:active {
   background-color: initial;
   background-position: 0 0;
+}
+
+.cardButton.reject:hover,
+.cardButton.reject:active {
   color: #FF4742;
 }
 
-.rejectButton:active {
-  opacity: .5;
-}
-
-.acceptButton {
-  margin-left: 8px;
-  background: #51d242;
-  border: 1px solid #51d242;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 12px;
-  min-height: 24px;
-  min-width: 60px;
-  outline: 0;
-  text-align: center;
-  text-rendering: geometricprecision;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-}
-
-.acceptButton:hover,
-.acceptButton:active {
-  background-color: initial;
-  background-position: 0 0;
+.cardButton.accept:hover,
+.cardButton.accept:active {
   color: #51d242;
 }
 
-.acceptButton:active {
-  opacity: .5;
-}
-
-.undoButton {
-  margin-left: 8px;
-  background: #4279d2;
-  border: 1px solid #4279d2;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 12px;
-  min-height: 24px;
-  min-width: 60px;
-  outline: 0;
-  text-align: center;
-  text-rendering: geometricprecision;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-}
-
-.undoButton:hover,
-.undoButton:active {
-  background-color: initial;
-  background-position: 0 0;
+.cardButton.undo:hover,
+.cardButton.undo:active {
   color: #4279d2;
 }
 
-.undoButton:active {
+.cardButton:active {
   opacity: .5;
 }
