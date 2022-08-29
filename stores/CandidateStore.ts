@@ -10,7 +10,7 @@ const sessionStorageEffect =
       setSelf(JSON.parse(savedValue));
     }
 
-    onSet((newValue: Candidate, _: any, isReset: boolean) => {
+    onSet((newValue: Candidate[], _: any, isReset: boolean) => {
       isReset
         ? sessionStorage.removeItem(key)
         : sessionStorage.setItem(key, JSON.stringify(newValue));

@@ -70,7 +70,7 @@ function CandidateCard({
   };
 
   return (
-    <div className={styles.card}>
+    <div data-testid={'candidate-card'} className={styles.card}>
       <div className={styles.cardBody}>
         <Image src={candidate.avatar} width="60" height="60" />
         <div className={styles.cardTextContainer}>
@@ -114,12 +114,14 @@ function CandidateCard({
         {candidate.status === CandidateStatus.NONE && (
           <>
             <button
+              data-testid="accept-button"
               className={`${styles.cardButton} ${styles.accept}`}
               onClick={onAccept}
             >
               Accept
             </button>
             <button
+              data-testid="reject-button"
               className={`${styles.cardButton} ${styles.reject}`}
               onClick={onReject}
             >
@@ -129,6 +131,7 @@ function CandidateCard({
         )}
         {candidate.status !== CandidateStatus.NONE && (
           <button
+            data-testid="undo-button"
             className={`${styles.cardButton} ${styles.undo}`}
             onClick={onUndo}
           >
