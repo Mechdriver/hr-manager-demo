@@ -4,7 +4,6 @@ export type Candidate = {
   name: CandidateName;
   email: string;
   phoneNumber: string,
-  thumbnail: string;
   avatar: string;
   status: CandidateStatus | null,
   comment: string | null,
