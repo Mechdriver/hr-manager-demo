@@ -13,6 +13,7 @@ export const parseCandidate = (data: any): Candidate => {
     gender: gender,
     name: {...data.name},
     email: data.email,
+    phoneNumber: data.phone,
     thumbnail: data.picture.thumbnail,
     avatar: data.picture.large,
     status: null,

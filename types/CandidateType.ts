@@ -3,6 +3,7 @@ export type Candidate = {
   gender: string;
   name: CandidateName;
   email: string;
+  phoneNumber: string,
   thumbnail: string;
   avatar: string;
   status: CandidateStatus | null,
@@ -15,7 +16,7 @@ export type CandidateName = {
   last: string,
 };
 
-enum CandidateStatus {
+export enum CandidateStatus {
   REJECTED = 0,
   ACCEPTED = 1,
 }
