@@ -1,4 +1,4 @@
-export const dummyData = {
+export const mockCandidateData = {
   results: [
     {
       gender: "male",
@@ -42,7 +42,7 @@ export const dummyData = {
   info: { seed: "e5881767b69ed64c", results: 1, page: 1, version: "1.4" },
 };
 
-export const dummyData2 = {
+export const mockCandidateData2 = {
   results: [
     {
       gender: "male",
