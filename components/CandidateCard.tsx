@@ -86,6 +86,22 @@ function CandidateCard({
           />
         </div>
       )}
+      {candidate.status !== null && (
+        <div
+          className={
+            `${styles.cardStatusText}` +
+            ` ${
+              candidate.status === CandidateStatus.ACCEPTED
+                ? styles.accepted
+                : styles.rejected
+            }`
+          }
+        >
+          {candidate.status === CandidateStatus.ACCEPTED
+            ? "Accepted"
+            : "Rejected"}
+        </div>
+      )}
       {candidate.status !== null && candidate.comment && (
         <div className={styles.cardCommentArea}>{candidate.comment}</div>
       )}
