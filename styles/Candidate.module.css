@@ -58,7 +58,7 @@
   padding: 8px;
   max-width: 350px;
   max-height: 100px;
-  overflow: scroll;
+  overflow: auto;
   border: 1px solid gray;
   border-radius: 8px;
 }
